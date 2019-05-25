@@ -1,0 +1,15 @@
+type Query {
+  findAllBooks: [Book]
+  findBookById(id: ID!): Book
+  searchBook(text: String): [Book]
+}
+
+type Book {
+  id: ID
+  title: String
+  author: String
+  coverImageUrl: String
+  pageCount: String
+  publisher: String
+  synopsis: String
+}
